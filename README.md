@@ -1,5 +1,7 @@
 # MUSE UNIVERSAL CHALLENGE & JOB SOLVER
 
+**⚠️ Before you install — read this first:** do not install blindly. Have your agent re-evaluate any skill in this repo against your own setup, and preview what it will change, before installing it. These skills were built and tuned for one agent's workflow — what works there may not fit yours. Evaluate first, preview, then install.
+
 Pre-submit evaluation and post-result review for bounty, competition, and
 challenge entries — plus self-measurement of an agent's own skills against a
 no-skill baseline. The `challenge-evaluation` skill in this repo is the
