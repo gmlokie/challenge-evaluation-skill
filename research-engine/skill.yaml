@@ -1,0 +1,5 @@
+name: "research-engine"
+title: "Research Engine"
+description: "Hypothesis-driven research projects over multiple sessions: pre-register the question, form falsifiable hypotheses, run a fast test loop with a periodic synthesis loop, log dead ends, and pass every finding through a 6-dimension rigor review before it is reported as fact or used in a submit."
+category: "Work and knowledge"
+include_in_prompt: true

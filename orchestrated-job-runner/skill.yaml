@@ -1,0 +1,5 @@
+name: "orchestrated-job-runner"
+title: "Orchestrated Job Runner"
+description: "Run multi-step jobs as a resumable state machine with a file-based run ledger: plan-and-execute, sequential/concurrent/handoff patterns, per-step checkpoints, human-in-the-loop gates, retry with circuit breaker, and resume-after-crash without re-doing finished work."
+category: "Work and knowledge"
+include_in_prompt: true

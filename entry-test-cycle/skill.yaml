@@ -1,0 +1,5 @@
+name: "entry-test-cycle"
+title: "Entry Test Cycle"
+description: "Run a full test cycle on a challenge entry before submit: test plan from requirements, scenarios and cases, execution tracking, defect triage, coverage traceability, regression selection after a fix, and a closure verdict."
+category: "Work and knowledge"
+include_in_prompt: true

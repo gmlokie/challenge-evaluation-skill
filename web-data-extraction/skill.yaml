@@ -1,0 +1,5 @@
+name: "web-data-extraction"
+title: "Web Data Extraction"
+description: "Extract structured data from the web with free local tools only — public no-key APIs first, RSS second, static HTML via curl third, Playwright rendering last. Declare the output schema before fetching, validate every record, dedupe, timestamp, and save JSON/CSV under ~/workspace. Never uses paid scrapers or API keys."
+category: "Work and knowledge"
+include_in_prompt: true

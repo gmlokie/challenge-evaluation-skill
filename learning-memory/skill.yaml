@@ -1,0 +1,5 @@
+name: "learning-memory"
+title: "Learning Memory"
+description: "Capture, recall, consolidate, and forget what the agent learns — with local files only (MEMORY.md, daily notes, AGENTS.md), no vector DB, no server, no paid API. Use after any task, rejection, or loss; at the start of a task to recall relevant lessons; and during periodic memory review."
+category: "Work and knowledge"
+include_in_prompt: true

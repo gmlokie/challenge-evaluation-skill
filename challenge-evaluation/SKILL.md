@@ -66,7 +66,9 @@ Checklist (full text + reason codes in `references/acceptance-gate.md`):
 1. The behavior is implemented in the source, not only described in prose.
 2. Targeted tests / checks pass and match the expected outcome — on the
    EXACT artifact the grader sees (bundle contents, output tree), not the
-   repo tree. Run `scripts/check_output_tree.py <entry-dir>`.
+   repo tree. Run `scripts/check_output_tree.py <entry-dir>`. For a full
+   test campaign (plan → cases → defects → closure) run `entry-test-cycle`
+   first; this gate is the verdict on its output, not a replacement for it.
 3. The solution solves generally: no tailoring to visible tests, no
    special-casing of the competition/task, no reading of grading internals.
 4. Packaging, imports, and entry points are valid; new files are in the
@@ -113,6 +115,11 @@ Before submitting, assume the entry failed and reverse-engineer why
 - Score each: RPN = Severity × Occurrence × Detection (1–10 each).
   Severity ≥ 9 is critical regardless of RPN — catastrophic severity is
   never offset by low occurrence.
+- **Risk-ranked verification (when time is limited):** order the checks
+  by Risk = Complexity × ChangeFrequency × (1 − Coverage) — each factor
+  H/M/L → 3/2/1; Coverage 0–1 is the fraction of the item's acceptance
+  criteria with a passing evidence check. Verify High → Low. (Method
+  from `task-analyzer` §7 / qa-risk-analyzer, Nov 2026.)
 - For each mode above threshold: mitigations in three layers —
   Detection, Prevention, Recovery — plus what would falsify it.
 - Failure taxonomy to check first (loop/eval failures):
@@ -152,7 +159,9 @@ For every rejection, loss, or unexpected result, before the next attempt:
 3. Record: selected strategy, predicted result, actual result, errors
    and missed requirements, time spent, what worked, what failed.
    Promote the lesson to `AGENTS.md` / `MEMORY.md` / the relevant skill
-   within 48 hours — delayed capture loses accuracy.
+   within 48 hours — delayed capture loses accuracy. Capture and
+   promotion follow `learning-memory` (admission gate, typed store,
+   confidence by evidence count).
 4. Feed the failure back into the evaluation baseline: a drift that
    escapes detection becomes the new normal.
 

@@ -1,0 +1,5 @@
+name: "task-analyzer"
+title: "Task Analyzer"
+description: "Front door for any new task, bounty, competition, or job: turn vague or underspecified input into a structured brief with a sealed requirement checklist (REQ IDs + Given/When/Then acceptance criteria), then verify the built artifact against that brief (drift check) before it goes to strategy or submit."
+category: "Work and knowledge"
+include_in_prompt: true
