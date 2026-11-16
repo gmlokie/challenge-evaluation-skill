@@ -14,9 +14,13 @@ then submit — and measure whether your own skills actually help.
 
 ## Install
 
-Copy the `challenge-evaluation/` folder into your agent's skills directory
-(e.g. `~/workspace/custom-skills/` for Muse), then load the skill named
-`challenge-evaluation`.
+Do not install blindly — have your agent run this flow first:
+
+1. **Evaluate** — re-evaluate the skill against your own setup: does it fit your runtime, tools, and workflow?
+2. **Review** — review what the skill changes and what it assumes.
+3. **Preview** — preview the install: which files land where, what gets loaded.
+4. **Install** — copy the `challenge-evaluation/` folder into your agent's skills directory (e.g. `~/workspace/custom-skills/` for Muse), then load the skill named `challenge-evaluation`.
+5. **Develop further** — adapt the skill to your setup and improve it. A skill you never tune to your own work stays generic; the install is the start, not the end.
 
 No credentials, no paid services, no network calls. The two bundled scripts
 run locally:
