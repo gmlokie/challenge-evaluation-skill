@@ -1,0 +1,5 @@
+name: "challenge-evaluation"
+title: "Challenge Evaluation"
+description: "Pre-submit evaluation and post-result review for bounty, competition, and challenge entries, plus self-measurement of the agent's own skills against a no-skill baseline."
+category: "Work and knowledge"
+include_in_prompt: true
